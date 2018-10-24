@@ -1,8 +1,7 @@
+# SPDX-License-Identifier: GPL-2.0
 #/*------------------------------------------------------------------------*/
-#/*  Nuvoton Technology Corporation Confidential                           */
-#/*                                                                        */
 #/*  Copyright (c) 2015-2018 by Nuvoton Technology Corporation             */
-#/*  All rights reserved                                                   */
+#/*  All Rights Reserved                                                   */
 #/*                                                                        */
 #/*<<<---------------------------------------------------------------------*/
 #/* File Contents:                                                         */
@@ -28,8 +27,8 @@
 # Directories
 #----------------------------------------------------------------------------
 
-SRC_DIR		= ../src
-DELIV_LOC       = ../deliverables/linux/
+SRC_DIR		= ./src
+DELIV_LOC       = ./deliverables/linux/
 OUTPUT_DIR      = $(DELIV_LOC)/release
 OUT_NAME        = signit
 #----------------------------------------------------------------------------
@@ -58,7 +57,7 @@ signit_SRC    =                            \
 
 CC		= g++
 MAKEDIR		= mkdir -p
-INCLUDE 	= -I $(SRC_DIR) -I ../include
+INCLUDE 	= -I $(SRC_DIR) -I ./include
 TARGET  	= signit
 CFLAGS  	= -std=c++0x -D__LINUX_APP__
 
